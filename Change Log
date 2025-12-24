@@ -1,0 +1,53 @@
+Create-server.toml
+  [ 18] bulkPressing = true
+  [ 71] maxBeltLength = 20
+  [ 76] maxChainConveyorLength = 128
+  [ 81] maxChainConveyorConnections = 6
+  [306] chain_conveyor = 0.0
+  [352] fluidTankCapacity = 64
+  [364] mechanicalPumpRange = 128
+  [370] hosePulleyRange = 384
+  [410] mechanicalArmRange = 16
+  [415] packagePortRange = 32
+  [430] vaultCapacity = 2048
+-
+
+EnderStorage.cfg
+  [  8] I:"item_storage_size"=2
+-
+
+ftbultimine-server.snbt
+  [ 12] exhaustion_per_block: 0.0d
+  [ 22] max_blocks: 128
+  [ 71] removed: "minecraft:base_stone_overworld"
+  -
+
+rsinfinitybooster-server.toml
+  [  5] energyUsage = 1
+  [ 11] energyUsage = 1
+-
+
+simplemagnets-common.toml
+  [ 42] basicCoilMaxRange = 5
+  [ 58] advancedCoilMaxRange = 10
+-
+
+sophisticatedbackpacks-server.toml
+  Leather backpack
+  [ 31] inventorySlotCount = 45
+  [ 35] upgradeSlotCount = 2
+  Copper backpack
+  [ 42] inventorySlotCount = 54
+  [ 46] upgradeSlotCount = 3
+  Iron backpack
+  [ 53] inventorySlotCount = 81
+  [ 57] upgradeSlotCount = 5
+  Gold backpack
+  [ 64] inventorySlotCount = 108
+  [ 68] upgradeSlotCount = 6
+  Diamond backpack
+  [ 75] inventorySlotCount = 120
+  [ 79] upgradeSlotCount = 8
+  Netherite backpack
+  [ 86] inventorySlotCount = 144
+  [ 90] upgradeSlotCount = 10
