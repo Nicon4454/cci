@@ -1,3 +1,11 @@
+clavis.yaml
+  [ 35] qualityPenaltyPerHit: 0.0
+  [37 - 38] 
+    startingQuality: # 0.0 - 10.0
+    5.0
+  [59] removed: '#c:music_discs': 8.0
+-
+
 Create-server.toml
   [ 18] bulkPressing = true
   [ 71] maxBeltLength = 20
