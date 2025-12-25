@@ -33,6 +33,7 @@ simplemagnets-common.toml
 -
 
 sophisticatedbackpacks-server.toml
+  [ 14] maxUpgradesPerStorage = ["furnace_upgrades|1", "stack_upgrades|5", "jukebox_upgrades|1"]
   Leather backpack
   [ 31] inventorySlotCount = 45
   [ 35] upgradeSlotCount = 2
@@ -51,3 +52,28 @@ sophisticatedbackpacks-server.toml
   Netherite backpack
   [ 86] inventorySlotCount = 144
   [ 90] upgradeSlotCount = 10
+-
+
+torchmaster.toml
+  [ 13] megaTorchRadius = 512
+  [ 27] megaTorchEntityBlockListOverrides = ["+minecraft:bat"]
+-
+
+waystones-common.toml
+  [ 12] warpPlateUseTime = 5
+  [ 18] inventoryButton = "ANY"
+  [ 22] inventoryButtonY = 7
+  [ 47] spawnInVillages = "FREQUENT"
+  [ 51] enableCosts = false
+  [ 55] set cooldown at the end of the line to 10
+  [ 58] transportPets = "ENABLED"
+
+added mods
+ftb-ranks-neoforge-2101.1.3
+carryon-neoforge-1.21.1-2.2.2.11
+create_furnitures-1.1.2-neoforge-1.21.1
+croptopia_1.21.1_NEO-FORGE-4.1.0 / EpheroLib-1.21.1-NEO-FORGE-1.2.0
+FarmersDelight-1.21.1-1.2.8
+waystones-neoforge-1.21.1-21.1.19
+
+
