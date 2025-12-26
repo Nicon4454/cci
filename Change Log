@@ -70,7 +70,8 @@ torchmaster.toml
 waystones-common.toml
   [ 12] warpPlateUseTime = 5
   [ 18] inventoryButton = "ANY"
-  [ 22] inventoryButtonY = 7
+  [ 20] inventoryButtonX = 135
+  [ 22] inventoryButtonY = 60
   [ 47] spawnInVillages = "FREQUENT"
   [ 51] enableCosts = false
   [ 55] set cooldown at the end of the line to 10
