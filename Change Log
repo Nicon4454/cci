@@ -1,5 +1,21 @@
 seed -1870649603998204313
 
+botanypotstiers.json *
+  [ 11] "value": 5
+  [ 19] "value": 5
+  [ 27] "value": 8
+  [ 35] "value": 6
+  [ 43] "value": 20
+  [ 51] "value": 12
+-
+
+carryon-common.toml *
+  [ 14] maxEntityHeight = 5
+  [ 32] slownessInCreative = false
+  [ 34] pickupHostileMobs = true
+  [ 36] heavyEntities = false
+-
+
 clavis.yaml
   [ 35] qualityPenaltyPerHit: 0.0
   [37 - 38] 
@@ -10,12 +26,20 @@ clavis.yaml
 
 comforts-server.toml
   [ 38] sleepingBagEffects = ["minecraft:regeneration 10 5", "minecraft:saturation 2 5"]
+-
+
+create_jetpack-common.toml *
+  [  4] seconds_per_tank = 1800
+  [  7] seconds_per_tank_hover = 7200
+  [ 21] hover_descend = -0.01
+  
 
 Create-server.toml
   [ 18] bulkPressing = true
   [ 71] maxBeltLength = 20
   [ 76] maxChainConveyorLength = 128
   [ 81] maxChainConveyorConnections = 6
+  [106] crankHungerMultiplier = 0.0
   [306] chain_conveyor = 0.0
   [352] fluidTankCapacity = 64
   [364] mechanicalPumpRange = 128
@@ -23,10 +47,41 @@ Create-server.toml
   [410] mechanicalArmRange = 16
   [415] packagePortRange = 32
   [430] vaultCapacity = 2048
+  [435] chainConveyorCapacity = 40
+-
+
+createaddition-common.toml *
+  [  8] fe_at_max_rpm = 2048
+-
+
+createcobblestone-common.toml *
+  [ 14] outputPerSecondPerRpm = 5
+  [ 19] maxGeneratorStorage = 2048
+  [ 33] basaltGeneratorEnabled = true
+  [ 36] stoneGeneratorEnabled = true
+  [ 39] limestoneGeneratorEnabled = true
+  [ 42] scoriaGeneratorEnabled = true
 -
 
 EnderStorage.cfg
   [  8] I:"item_storage_size"=2
+-
+
+extrastorage-server.toml
+  [  8] include_pattern_energy = false
+-
+
+ftbbackups2.json
+  [ 15] "max_backups": 50,
+  [ 36] "additional_files": ["config/"],
+  [ 49] "display_file_size": true,
+-
+
+ftbchunks-world.snbt *
+  [ 52] pvp_mode: "never"
+  [130] force_load_mode: "always"
+  [141] max_force_loaded_chunks: 50
+  [208] def_pvp: false
 -
 
 ftbultimine-server.snbt
@@ -35,12 +90,22 @@ ftbultimine-server.snbt
   [ 71] removed: "minecraft:base_stone_overworld"
   -
 
+functionalstorage-common.toml *
+  [  5] ARMORY_CABINET_SIZE = 16384
+  [  7] DRAWER_CONTROLLER_LINKING_RANGE = 128
+  [ 23] COPPER_MULTIPLIER = 16
+  [ 25] GOLD_MULTIPLIER = 32
+  [ 27] DIAMOND_MULTIPLIER = 48
+  [ 29] NETHERITE_MULTIPLIER = 64
+
+
+
 rsinfinitybooster-server.toml
   [  5] energyUsage = 1
   [ 11] energyUsage = 1
 -
 
-simplemagnets-common.toml
+simplemagnets-common.toml *
   [ 42] basicCoilMaxRange = 5
   [ 58] advancedCoilMaxRange = 10
 -
@@ -67,12 +132,52 @@ sophisticatedbackpacks-server.toml
   [ 90] upgradeSlotCount = 10
 -
 
-torchmaster.toml
+sophisticatedstorage-server.toml
+[  4] set all stack_upgrades to 5 should be 3 of them
+	#Wood Barrel Settings
+		inventorySlotCount = 45
+		upgradeSlotCount = 2
+	#Copper Barrel Settings
+		inventorySlotCount = 54
+		upgradeSlotCount = 3
+	#Iron Barrel Settings
+		inventorySlotCount = 81
+		upgradeSlotCount = 5
+	#Gold Barrel Settings
+		inventorySlotCount = 108
+		upgradeSlotCount = 6
+	#Diamond Barrel Settings
+		inventorySlotCount = 132
+		upgradeSlotCount = 8
+	#Netherite Barrel Settings
+		inventorySlotCount = 180
+		upgradeSlotCount = 10
+	#Wood Chest Settings
+		inventorySlotCount = 45
+		upgradeSlotCount = 2
+	#Copper Chest Settings
+		inventorySlotCount = 54
+		upgradeSlotCount = 3
+	#Iron Chest Settings
+		inventorySlotCount = 81
+		upgradeSlotCount = 5
+	#Gold Chest Settings
+		inventorySlotCount = 108
+		upgradeSlotCount = 6
+	#Diamond Chest Settings
+		inventorySlotCount = 132
+		upgradeSlotCount = 8
+	#Netherite Chest Settings
+		inventorySlotCount = 180
+		upgradeSlotCount = 10
+-
+
+torchmaster.toml *
   [ 13] megaTorchRadius = 512
   [ 27] megaTorchEntityBlockListOverrides = ["+minecraft:bat"]
 -
 
-waystones-common.toml
+waystones-common.toml *
   [ 12] warpPlateUseTime = 5
   [ 18] inventoryButton = "ANY"
   [ 20] inventoryButtonX = 135
@@ -81,6 +186,7 @@ waystones-common.toml
   [ 51] enableCosts = false
   [ 55] set cooldown at the end of the line to 10
   [ 58] transportPets = "ENABLED"
+-
 
 added mods
 ftb-ranks-neoforge-2101.1.3
